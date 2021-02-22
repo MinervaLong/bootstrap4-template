@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <!--Bootstrap hosted locally-->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- Latest compiled and minified CSS 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <!--Bootstrap hosted locally
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--My CSS-->
     <link rel="stylesheet" href="styles/style.css">
     <!--Google Fonts-->
@@ -20,15 +20,15 @@
 <body>
 
 <!--Nav bar-->
-<nav class="navbar bg-dark navbar-dark navbar-expand-md justify-content-end">
-    <div class="container">            
+<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+    <div class="container">         
         <a href="index.html" class="navbar-brand">
             <picture>
-                <source media="(min-width: 800px)" srcset="logo.svg">
+                <source media="(min-width: 850px)" srcset="logo.svg">
                 <img src="mobileLogo.png" alt="MinervaLong Logo">
             </picture>
-        </a>          
-
+        </a> 
+            
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
                 <a type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-primary px-3" >Login</a>
@@ -37,11 +37,11 @@
                 <a type="button" data-toggle="modal" data-target="#modalSignUp" class="nav-link btn btn-primary px3" href="#">Join</a>
             </li>
         </ul>
-       
-         <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#respMenu">
+           
+        <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#respMenu">
             <span class="navbar-toggler-icon"></span>
         </button>  
-
+    
         <div class="collapse navbar-collapse" id="respMenu">           
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -50,29 +50,42 @@
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </div>
+        </div>      
 
     </div>
 </nav>
 <!--End of Nav bar-->
 
-<header class="page-header header container-fluid">    
-    <div class="col-12 text-center header-text">
-        <h1>VANESA PEREA CUEVAS</h1>
-        <h3 class="py-4">Front-End Developer</h3>
-    </div>
-</header>
+<!--Header-->
+<div class="row">
+    <header class="page-header header container-fluid">    
+        <div class="col text-center header-text">
+            <h1>VANESA PEREA CUEVAS</h1>
+            <h3 class="py-4">Front-End Developer</h3>
+        </div>
+    </header>
+</div>
+<!--End of Header-->
 
 <!--About Section-->
 
     <!--About Heading-->
-<div class="col-12 text-center mt-5">
-    <h1 class="text-dark pt-4">About</h1>
-    <div class="border-top border-primary w-25 mx-auto my-3"></div>    
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h1 class="text-dark pt-4">About</h1>
+            <div class="border-top border-primary w-25 mx-auto my-3"></div>    
+        </div>
+    </div>
 </div>
+
     <!--About column-->
 <div class="container">
-    <div class="row my-5">
+    <div class="row my-4">
+        <div class="col-md-6 my-4">
+            <img src="image/about.jpg" loading="lazy" alt="About me image" class="w-100">
+        </div>
+
         <div class="col-md-6 my-4">
             <p>Tomcat munchkin grimalkin cheetah yet turkish angora. Cougar tiger ragdoll balinese jaguar
                 so birman. Malkin russian blue. Norwegian forest. Siamese. Scottish fold leopard, and british
@@ -84,11 +97,7 @@
                 destroy couch as revenge. Stare out cat door then go back inside.  
             </p>
             <a href="" class="btn btn-outline-dark btn-md">FIND OUT ON LINKEDIN</a>
-        </div>
-
-        <div class="col-md-6 my-4">
-            <img src="image/about.jpg" loading="lazy" alt="About me image" class="w-75">
-        </div>
+        </div>        
     </div>
 </div>
 
@@ -97,16 +106,21 @@
  <!--Blog Slide-->
 
     <!--Blog Heading-->
-    <div class="col-12 text-center mt-5">
-        <h1 class="text-dark pt-4">Blog</h1>
-        <div class="border-top border-primary w-25 mx-auto my-3"></div>
-        <p class="lead">Tips and tutorials of Front-end tecnologies</p>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h1 class="text-dark pt-4">Blog</h1>
+                <div class="border-top border-primary w-25 mx-auto my-3"></div>
+                <p class="lead">Tips and tutorials of Front-end tecnologies</p>
+            </div>
+        </div>
     </div>
 
     <!--Slide-->
-<div id="carousel" class="carousel slide container my-5" data-ride="carousel" data-interval="650000">
-    <!--Slide content-->
-    <div class="carousel-inner">
+<div id="carousel" class="carousel slide container my-4" data-ride="carousel" data-interval="650000">
+   <div class="row">
+        <!--Slide content-->
+    <div class="carousel-inner mx-3">
 
         <div class="carousel-item active">
             <div class="card mb-3">
@@ -179,20 +193,27 @@
     <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
         <span class="fas fa-chevron-circle-right fa-2x"></span>
     </a>
+   </div>
+    
 </div>
 <!--End of Blog Slide-->
 
 
 <!--Service section-->
     <!--Services Heading-->
-<div class="col-12 text-center mt-5">
-    <h1 class="text-dark pt-4">Services</h1>
-    <div class="border-top border-primary w-25 mx-auto my-3"></div>
-    <p class="lead">We will work together in a private platform</p>
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h1 class="text-dark pt-4">Services</h1>
+            <div class="border-top border-primary w-25 mx-auto my-3"></div>
+            <p class="lead">We will work together in a private platform</p>
+        </div>
+    </div>
 </div>
+
     <!--Services column-->
 <div class="container">
-    <div class="row my-5">
+    <div class="row my-4">
 
         <div class="col-md-4 my-4">
             <img src="image/service1.jpg" alt="Servicio 1" class="w-100">
@@ -217,9 +238,6 @@
                 on mouth from frenzied attack on poor innocent mouse. </p>
             <a href="" class="btn btn-outline-dark btn-md">Read more</a>
         </div>
-
-
-
     </div>
 </div>
 <!--End of Service Section-->
@@ -227,56 +245,65 @@
 <!--Projects Section-->
 
     <!--Projects Heading-->
-<div class="col-12 text-center mt-5">
-    <h1 class="text-dark pt-4">Projects</h1>
-    <div class="border-top border-primary w-25 mx-auto my-3"></div>
-    <p class="lead">Take a look at my latest projects</p>
-</div>
-    <!--My Projects Content-->
-    <div class="container my-5 ">
-        <div class="row">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project1.jpg" alt="Image Project 1">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project2.jpg" alt="Image Project 2">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project3.jpg" alt="Image Project 3">
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h1 class="text-dark pt-4">Projects</h1>
+            <div class="border-top border-primary w-25 mx-auto my-3"></div>
+            <p class="lead">Take a look at my latest projects</p>
         </div>
-        <div class="row">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project4.jpg" alt="Image Project 4">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project5.jpg" alt="Image Project 5">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project6.jpg" alt="Image Project 6">
-        </div>
-        <div class="row">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project7.jpg" alt="Image Project 7">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project8.jpg" alt="Image Project 8">
-            <img class="col-sm-6 col-md-4 my-3" src="image/project9.jpg" alt="Image Project 9">
-        </div>
-
     </div>
+</div>
+
+    <!--My Projects Content-->
+<div class="container my-4 ">
+    <div class="row">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project1.jpg" alt="Image Project 1">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project2.jpg" alt="Image Project 2">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project3.jpg" alt="Image Project 3">
+    </div>
+    <div class="row">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project4.jpg" alt="Image Project 4">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project5.jpg" alt="Image Project 5">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project6.jpg" alt="Image Project 6">
+     </div>
+     <div class="row">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project7.jpg" alt="Image Project 7">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project8.jpg" alt="Image Project 8">
+        <img class="col-sm-6 col-md-4 my-3" src="image/project9.jpg" alt="Image Project 9">
+    </div>
+
+</div>
 <!--End of Projects Section--> 
 
 <!--Jumbotron Contact Section-->
 <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1>Contact me</h1>      
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Name" name=""></div>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email Address" name="email">
+    <div class="container ">
+        <div class="row">
+            <h1 class="col-sm-12">Contact me</h1>      
+            <div class="col-sm-12 form-group">
+                <input type="text" class="form-control" placeholder="Name" name="">
+            </div>
+            <div class="col-sm-12 form-group">
+                <input type="email" class="form-control" placeholder="Email Address" name="email">
+            </div>
+            <div class="col-sm-12 form-group">
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <input type="submit" class="col-sm-12 btn btn-secondary btn-block" value="Send" name="">
         </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="4"></textarea>
-        </div>
-        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+      
     </div>
   </div>
 </div>
 
 <!--Footer-->
 <footer>
-    <div class=" bg-dark">
+    <div class="container-fluid bg-dark">
         <div class="row text-light text-center py-4 justify-content-center">
             <div class="col-sm-10 col-md-8 col-lg-6">
                 <img src="logo.svg" alt="Footer Logo">
-                <ul class="social pt-3">
+                <ul class="social pt-3 pr-5">
                     <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
@@ -355,17 +382,17 @@
 </div>
 
 <!----------------------------CDN BOOTSTRAP----------------------------> 
-<!-- jQuery library 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Popper JS 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-------------------------BOOTSTRAP HOSTED LOCALLY---------------------->
-<script src="css/jquery-3.5.1.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-------------------------BOOTSTRAP HOSTED LOCALLY--------------------
+<script src="styles/jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>-->
 </body>
 </html>
