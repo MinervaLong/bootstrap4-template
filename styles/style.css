@@ -1,0 +1,107 @@
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling*/
+    font-family: 'Roboto', sans-serif;
+    color: #616971;
+}
+
+/*-------------------NAVBAR------------------------*/
+
+.bg-dark {
+    background-color: #0F2027!important;
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+    z-index:1;
+}
+
+.nav-item {
+    padding:0.5rem;
+}
+
+/* Color de las opciones de menú y hover 
+.nav-link {}*/
+.nav-link:hover {color: #746657!important}
+
+/*-------------------HEADER---------------------------------*/
+
+.header {
+    background-image: url('../image/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    position: relative;
+    box-shadow: 0 1rem 1rem rgba(0,0,0 .1);
+}
+
+.header-text {
+    left: 50%;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -55%);
+} 
+/*-------------------SLIDE/CAROUSEL-----------------------------*/
+
+#carousel {
+    box-shadow: 0 1rem 1rem rgba(0,0,0 .1);
+}
+
+.carousel-inner {
+    max-height: 35rem !important; 
+}
+
+.carousel-item-prev,
+.carousel-item-next,
+.carousel-item.active {
+    transition: transform 1.2s ease;
+}
+
+/*------------------------MODAL---------------------------------*/
+
+.modal-bg {
+    background-color:ivory;
+}
+
+/*-----------------------FOOTER--------------------------------*/
+
+
+footer img {
+    height: 3.5rem;
+    margin: 1rem auto;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #746657;
+}
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+}
+
+ul.social li {
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer .svg-inline--fa {
+    font-size: 2.3rem;
+}
+
