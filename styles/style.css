@@ -56,8 +56,6 @@ body {
     background-color: #0F2027;
 }
 
-/* Color de las opciones de menú y hover 
-.nav-link {}*/
 .nav-link:hover {color: #746657!important}
 
 /*-------------------HEADER---------------------------------*/
@@ -78,6 +76,7 @@ body {
     transform: translate(-50%, -55%);
     color:  #0F2027;
 } 
+
 /*-------------------SLIDE/CAROUSEL-----------------------------*/
 
 #carousel {
@@ -86,6 +85,11 @@ body {
 
 .carousel-inner {
     max-height: 35rem !important; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: #0F2027!important;
 }
 
 .carousel-item-prev,
