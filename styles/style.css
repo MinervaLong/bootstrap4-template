@@ -127,3 +127,9 @@ footer .svg-inline--fa {
     color: #0c2231 !important;
 }
 
+.btn-outline-dark {
+    background-color: #0F2027!important;
+    color: #746657;
+    border:1px solid #746657 !important;
+}
+
