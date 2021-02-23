@@ -114,13 +114,14 @@ body {
 }
 
 .btn-secondary {
-    background-color: #3F3D56;
-    border-color: #3F3D56;
+    background-color: #6C63FF;    
+    border-color: #6C63FF;
     font-weight: 500;
 }
 
 .btn-secondary:hover {
-    background-color: #6C63FF;
+    background-color: #3F3D56;
+    border-color: #3F3D56;
 }
 
 /*-----------------------FOOTER--------------------------------*/
