@@ -29,6 +29,17 @@ body {
     padding:0.5rem;
 }
 
+.btn-primary {
+    background-color: #0F2027;
+    border: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #0F2027;
+}
+
 /* Color de las opciones de menú y hover 
 .nav-link {}*/
 .nav-link:hover {color: #746657!important}
