@@ -117,3 +117,8 @@ footer .svg-inline--fa {
     font-size: 2.3rem;
 }
 
+
+.border-primary{
+    border: 3px solid #746657 !important; 
+}
+
