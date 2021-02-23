@@ -84,6 +84,21 @@ body {
     background-color:ivory;
 }
 
+/*------------------------JUMBOTRON-----------------------------*/
+
+.jumbotron {
+    background-image: url(../image/jumbo-bg.svg);
+    margin-bottom: 0;
+}
+
+.jumbotron h1 {
+    text-align: center;
+}
+
+.form-group {
+    opacity: 0.6;
+}
+
 /*-----------------------FOOTER--------------------------------*/
 
 
